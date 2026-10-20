@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg full-screen bg-dark">
+<div class="container">
+    <a class="nav-link active text-white">
+       <p class="text-white fw-bold mt-2"></p>   
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+         <li class="nav-item">
+          <a class="nav-link active text-white" routerLink="/main/about" id="acercade">Acerca de</a>
+         </li>
+         <li class="nav-item">
+             <a class="nav-link active text-white" id="proyectos" >Proyectos</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link active text-white" routerLink="/main/home" id="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" (click)="salir()" id="salir">Salir</a>
+             </li>            
+        </ul>
+       </div>
+</div>
+</nav>
+<router-outlet></router-outlet>

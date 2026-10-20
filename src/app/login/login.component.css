@@ -1,0 +1,16 @@
+body{
+     background-color: #272626;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+}
+.carde{
+    background-color: #5f80aa;
+      padding: 150px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 255, 170, 0.3);
+}
