@@ -169,10 +169,10 @@
                   }
                 </div>
                 <div class="col-md-6">
-                  <label for="lead-campaign" class="form-label">Campaña o partido</label>
-                  <input id="lead-campaign" class="form-control" type="text" formControlName="campaign" autocomplete="organization" placeholder="Nombre de la campaña">
+                  <label for="lead-campaign" class="form-label">Candidato y partido</label>
+                  <input id="lead-campaign" class="form-control" type="text" formControlName="campaign" autocomplete="organization" placeholder="Nombre del candidato y partido">
                   @if (demoForm.controls.campaign.touched && demoForm.controls.campaign.invalid) {
-                    <small class="text-danger">Indica tu campaña o partido.</small>
+                    <small class="text-danger">Indica tu candidato y partido.</small>
                   }
                 </div>
                 <div class="col-md-6">
@@ -190,12 +190,12 @@
                   }
                 </div>
                 <div class="col-12 pt-2">
-                  <button class="btn btn-accent btn-lg w-100" type="submit">Quiero agendar mi demo <span aria-hidden="true">→</span></button>
+                  <button class="btn btn-accent btn-lg w-100" type="submit" >Quiero agendar mi demo <span aria-hidden="true">→</span></button>
                 </div>
               </div>
               @if (submitted) {
                 <div class="alert alert-info mt-3 mb-0" role="status">
-                  Formulario validado. Para recibir solicitudes, conecta este formulario con tu CRM o servicio de backend.
+                  Gracias por tu interés. Serás redirigido a WhatsApp para coordinar la demostración.
                 </div>
               }
               <p class="small text-secondary text-center mt-3 mb-0">Tus datos se utilizarán únicamente para coordinar esta demostración.</p>
