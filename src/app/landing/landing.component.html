@@ -169,10 +169,22 @@
                   }
                 </div>
                 <div class="col-md-6">
-                  <label for="lead-campaign" class="form-label">Candidato y partido</label>
-                  <input id="lead-campaign" class="form-control" type="text" formControlName="campaign" autocomplete="organization" placeholder="Nombre del candidato y partido">
+                  <label for="lead-campaign" class="form-label">Candidato</label>
+                  <input id="lead-campaign" class="form-control" type="text" formControlName="campaign" autocomplete="organization" placeholder="Nombre del candidato">
                   @if (demoForm.controls.campaign.touched && demoForm.controls.campaign.invalid) {
-                    <small class="text-danger">Indica tu candidato y partido.</small>
+                    <small class="text-danger">Indica tu candidato.</small>
+                  }
+                </div>
+                <div class="col-md-6">
+                  <label for="lead-partido" class="form-label">Partido</label>
+                  <select id="lead-partido" class="form-control" formControlName="partido">
+                    <option value="">Selecciona un partido</option>
+                    @for (partido of partidos; track partido) {
+                      <option [value]="partido">{{ partido }}</option>
+                    }
+                  </select>
+                  @if (demoForm.controls.partido.touched && demoForm.controls.partido.invalid) {
+                    <small class="text-danger">Selecciona un partido.</small>
                   }
                 </div>
                 <div class="col-md-6">
@@ -182,7 +194,7 @@
                     <small class="text-danger">Ingresa un correo electrónico válido.</small>
                   }
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <label for="lead-phone" class="form-label">Teléfono</label>
                   <input id="lead-phone" class="form-control" type="tel" formControlName="phone" autocomplete="tel" placeholder="+1 (000) 000-0000">
                   @if (demoForm.controls.phone.touched && demoForm.controls.phone.invalid) {
